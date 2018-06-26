@@ -71,7 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LibraryPath>$(MSBuildProjectDirectory)\..\libs\glfw-3.2.1\libs;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Users\vungu\OneDrive\Desktop\GroupProject\Top-Down-Shooter\libs\glm;C:\Users\vungu\OneDrive\Desktop\GroupProject\Top-Down-Shooter\libs\glfw-3.2.1\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\vungu\OneDrive\Desktop\GroupProject\Top-Down-Shooter\libs\glm;C:\Users\vungu\OneDrive\Desktop\GroupProject\Top-Down-Shooter\libs\glfw-3.2.1\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -122,7 +123,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Circle.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Circle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
