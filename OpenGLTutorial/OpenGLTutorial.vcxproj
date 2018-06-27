@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LibraryPath>C:\dev\TopDown\Top-Down-Shooter\libs\glm;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\dev\TopDown\Top-Down-Shooter\libs\glm;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\vungu\OneDrive\Desktop\GroupProject\Top-Down-Shooter\libs\glm;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\dev\TopDown\Top-Down-Shooter\libs\glm;$(IncludePath)</IncludePath>
@@ -134,10 +134,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="CirCollsion.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="simpleCollisonDetector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="CirCollsion.h" />
+    <ClInclude Include="GameObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

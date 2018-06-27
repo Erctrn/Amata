@@ -28,14 +28,17 @@ public:
 	Circle(const float &);
 
 	void setRadius(const float&);
+	void setPos(const float&, const float&);
 
 	float getRadius() const;
+	glm::vec2  getPos() const;
 	std::vector<glm::vec2> getCirclePoint() const;
 
 	~Circle();
 
 private:
 	float m_Radius;
+	glm::vec2 m_Pos;
 	std::vector<glm::vec2> m_CirclePoint;
 
 	void createCiclePiont(const float&);

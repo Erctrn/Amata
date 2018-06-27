@@ -15,13 +15,17 @@ std::ostream & operator<<(std::ostream &out, const Circle &c)
 
 Circle::Circle()
 {
-	m_Radius = 1;
+	m_Radius = 1.0f;
+	m_Pos.x = 0.0f;
+	m_Pos.y = 0.0f;
 	createCiclePiont(m_Radius);
 }
 
 Circle::Circle(const float &radius)
 {
 	m_Radius = radius;
+	m_Pos.x = 0.0f;
+	m_Pos.y = 0.0f;
 	createCiclePiont(m_Radius);
 }
 
@@ -32,17 +36,26 @@ void Circle::setRadius(const float & newRadius)
 	createCiclePiont(m_Radius);
 }
 
+void Circle::setPos(const float &newX, const float &newY)
+{
+	m_Pos.x = newX;
+	m_Pos.y = newY;
+}
+
 float Circle::getRadius() const
 {
 	return m_Radius;
+}
+
+glm::vec2 Circle::getPos() const
+{
+	return m_Pos;
 }
 
 std::vector<glm::vec2> Circle::getCirclePoint() const
 {
 	return m_CirclePoint;
 }
-
-
 
 Circle::~Circle()
 {
