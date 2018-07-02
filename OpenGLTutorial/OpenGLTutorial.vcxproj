@@ -72,10 +72,10 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LibraryPath>C:\dev\TopDown\Top-Down-Shooter\libs\glm;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\Users\vungu\OneDrive\Desktop\GroupProject\Top-Down-Shooter\libs\glm;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\vungu\OneDrive\Desktop\GroupProject\Top-Down-Shooter\libs\glm;$(IncludePath);C:\dev\TopDown\Top-Down-Shooter\libs\glm;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\dev\TopDown\Top-Down-Shooter\libs\glm;$(IncludePath)</IncludePath>
+    <IncludePath>C:\dev\TopDown\Top-Down-Shooter\libs\glm;$(IncludePath);C:\dev\TopDown\Top-Down-Shooter\libs\glm;$(IncludePath)</IncludePath>
     <LibraryPath>C:\dev\TopDown\Top-Down-Shooter\libs\glm;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -145,6 +145,9 @@
     <ClInclude Include="CirCollsion.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="GameObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Basic.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
