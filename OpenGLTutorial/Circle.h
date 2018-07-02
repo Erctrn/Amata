@@ -5,11 +5,12 @@
 #include <string>
 #include <vector>
 #include <vec2.hpp>
+#include "Component.h"
 
 
 const int MAX_POINTS = 32;
 
-class Circle
+class Circle : public Component
 {
 	// this line of code is to to print out the the class when using
 	// std::cout

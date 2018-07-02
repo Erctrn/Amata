@@ -1,6 +1,8 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include "GameObject.h"
+#include "Circle.h"
 
 int main(void)
 {
@@ -25,6 +27,19 @@ int main(void)
 		std::cout << "Error!" << std::endl;
 
 	std::cout << glGetString(GL_VERSION) << std::endl;
+
+	// Vu Test 
+	GameObject player;
+	Circle cir;
+	player.addComponent(cir);
+	std::cout << player;
+	player.addComponent(cir);
+	std::cout << player;
+	player.addComponent(cir);
+	std::cout << player;
+
+	// Vu test end
+
 
 	// render loop
 	/* Loop until the user closes the window */
